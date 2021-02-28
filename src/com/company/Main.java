@@ -13,5 +13,10 @@ public class Main {
 
         Phone xiaomi = new Phone("redmi 10", "smartphone", 1, 6.0);
         Phone samsung = new Phone("s 10", "smartphone", 2, 6.5);
+        if(bob.getWeight()<jack.getWeight()) {
+            System.out.println("This animal is weigher " + jack.getName() + " weight: " + jack.getWeight());
+        }             System.out.println("This animal is weigher " + bob.getName() + " weight: " + bob.getWeight());
+
+
     }
 }
