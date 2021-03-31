@@ -27,7 +27,7 @@ public class Main {
         humanList.add(kenny);
         humanList.add(alf);
         for (Human human : humanList) {
-            System.out.println("My name is: " + human.getName() + "Me weight is: " + human.getWeight());
+            System.out.println("My name is: " + human.getName() + " My weight is " + human.getWeight());
         }
         john.setSalary(-100);
         john.setSalary(10000);
@@ -43,5 +43,4 @@ public class Main {
 
         Human.getCar(car);
     }
-}
 }

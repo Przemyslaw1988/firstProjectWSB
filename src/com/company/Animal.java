@@ -37,31 +37,42 @@ public class Animal {
         if(this.weight > 0){
         if(type.equals("lion")){
             this.weight = TYPE_OF_LION + 1.0;
+            System.out.println("So good");
         }
         if(type.equals("mouse")){
             this.weight = TYPE_OF_MOUSE + 0.1;
+            System.out.println("I love it");
         }
         if(type.equals("dog")){
             this.weight = TYPE_OF_DOG + 0.5;
+            System.out.println("Awesome");
         }
     }else{
             System.out.println("Animal is dead");
         }
-        System.out.println("Weight of " + getType()+ " " + weight);
+        System.out.println("Weight of " + getType()+ " " + this.weight);
     }
 
     public void takeForAWalk(){
         if(this.weight > 0){
             if(type.equals("lion")){
-                weight = TYPE_OF_LION - 1.0;}
+                weight = TYPE_OF_LION - 1.0;
+                System.out.println("I'm lion I need to be in shape");
+            }
             if(type.equals("mouse")){
-                weight = TYPE_OF_MOUSE - 1.0;}
+                weight = TYPE_OF_MOUSE - 1.0;
+                System.out.println("I'm mouse I need to practice " +
+                                   "otherwise someone would kill me");
+            }
             if(type.equals("dog")){
-                weight = TYPE_OF_DOG - 1.0;}
+                weight = TYPE_OF_DOG - 1.0;
+                System.out.println("I'm dog thanks for a walk finally"+
+                                    " I can eat my love food");
+            }
         }else{
             System.out.println("Animal is dead");
         }
-        System.out.println("Weight of " + getType()+ " " + weight);
+        System.out.println("Weight of " + getType()+ " " + this.weight);
     }
 
     public String getName() {
